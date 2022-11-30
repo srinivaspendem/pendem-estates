@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 300 400 500 600 900;
+  font-display: optional;
+  src: url(/fonts/inter-v7-latin-regular.woff2) format("woff2");
+}
+
+html {
+  scroll-behavior: smooth;
+  min-width: 360px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Inter,
+    sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  /* background-color: #e5e5e5; */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@layer base {
+  :root {
+    /* background colours */
+    --base-color: 248, 248, 250; /* rgb(248, 248, 250) */
+    --base-dark-color: 25, 27, 54; /*rgba(25, 27, 54)*/
+    --base-footer-color: 31, 41, 55; /*rgba(31, 41, 55)*/
+    /* text colours */
+    --color-text-base: 0, 0, 0; /* rgb(0, 0, 0) */
+    --color-text-inverted: 225, 225, 225; /* rgb(225, 225, 225) */
+    --color-text-muted: 141, 141, 141; /* rgb(141, 141, 141) */
+    --color-text-muted-dark: 81, 81, 84; /* rgb(81, 81, 84) */
+    /* extra backgrounds */
+    --background-extra-gray: 234, 238, 244;
+    --background-extra-dark-blue: 1, 49, 121;
+    --background-extra-blue: 17, 113, 241;
+    --background-extra-red: 254, 101, 113;
+    --background-extra-pink: 250, 239, 242;
+    /* extra-colors */
+    --color-extra-red: 254, 79, 84;
+    --color-extra-yellow: 245, 175, 34;
+    --color-extra-blue: 37, 167, 251;
+    --color-extra-green: 81, 192, 107;
+    --color-extra-violet: 111, 98, 251;
+  },
+  .theme-dark {
+    /* background colours */
+    --base-color: 248, 248, 250; /* rgb(248, 248, 250) */
+    --base-dark-color: 25, 27, 54; /*rgba(25, 27, 54)*/
+    --base-footer-color: 31, 41, 55; /*rgba(31, 41, 55)*/
+    /* text colours */
+    --color-text-base: 0, 0, 0; /* rgb(0, 0, 0) */
+    --color-text-inverted: 225, 225, 225; /* rgb(225, 225, 225) */
+    --color-text-muted: 141, 141, 141; /* rgb(141, 141, 141) */
+    --color-text-muted-dark: 81, 81, 84; /* rgb(81, 81, 84) */
+    /* extra backgrounds */
+    --background-extra-gray: 234, 238, 244;
+    --background-extra-dark-blue: 1, 49, 121;
+    --background-extra-blue: 17, 113, 241;
+    --background-extra-red: 254, 101, 113;
+    --background-extra-pink: 250, 239, 242;
+    --background-extra-green: 0, 174, 143;
+    /* extra-colors */
+    --color-extra-red: 254, 79, 84;
+    --color-extra-yellow: 245, 175, 34;
+    --color-extra-blue: 37, 167, 251;
+    --color-extra-green: 81, 192, 107;
+    --color-extra-violet: 111, 98, 251;
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Chrome, Safari and Opera */
+    .scrollbar-hidden::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge add Firefox */
+    .scrollbar-hidden {
+      -ms-overflow-style: none;
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hero-gradient {
+  background: linear-gradient(
+    145.77deg,
+    #18c0ea 0%,
+    #848fec 26.36%,
+    #c671eb 51.56%,
+    #e55c8f 76.51%,
+    #f5515f 100%
+  );
+}
+.form-gradient {
+  background: linear-gradient(110.01deg, #0575e6 0%, #021b79 100%);
+}
+.triangle-right {
+  border-left: 96vw solid #f8f8fa;
+  border-bottom: 200px solid transparent;
+}
