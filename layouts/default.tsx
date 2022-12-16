@@ -3,7 +3,7 @@ import Footer from "@components/Footer";
 
 const DefaultLayout = (props: any) => {
   return (
-    <div className="absolute min-h-[400px] h-screen w-full flex flex-col">
+    <div className="absolute min-h-[400px] h-screen w-full bg-primary">
       <div className="relative ">
         <Navbar />
       </div>
