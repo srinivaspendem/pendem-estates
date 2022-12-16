@@ -16,9 +16,9 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Inter,
-    sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  /* background-color: #e5e5e5; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Inter, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  /* background-color:  #981f22; */
 }
 
 ::-webkit-scrollbar {
@@ -33,56 +33,6 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-@layer base {
-  :root {
-    /* background colours */
-    --base-color: 248, 248, 250; /* rgb(248, 248, 250) */
-    --base-dark-color: 25, 27, 54; /*rgba(25, 27, 54)*/
-    --base-footer-color: 31, 41, 55; /*rgba(31, 41, 55)*/
-    /* text colours */
-    --color-text-base: 0, 0, 0; /* rgb(0, 0, 0) */
-    --color-text-inverted: 225, 225, 225; /* rgb(225, 225, 225) */
-    --color-text-muted: 141, 141, 141; /* rgb(141, 141, 141) */
-    --color-text-muted-dark: 81, 81, 84; /* rgb(81, 81, 84) */
-    /* extra backgrounds */
-    --background-extra-gray: 234, 238, 244;
-    --background-extra-dark-blue: 1, 49, 121;
-    --background-extra-blue: 17, 113, 241;
-    --background-extra-red: 254, 101, 113;
-    --background-extra-pink: 250, 239, 242;
-    /* extra-colors */
-    --color-extra-red: 254, 79, 84;
-    --color-extra-yellow: 245, 175, 34;
-    --color-extra-blue: 37, 167, 251;
-    --color-extra-green: 81, 192, 107;
-    --color-extra-violet: 111, 98, 251;
-  },
-  .theme-dark {
-    /* background colours */
-    --base-color: 248, 248, 250; /* rgb(248, 248, 250) */
-    --base-dark-color: 25, 27, 54; /*rgba(25, 27, 54)*/
-    --base-footer-color: 31, 41, 55; /*rgba(31, 41, 55)*/
-    /* text colours */
-    --color-text-base: 0, 0, 0; /* rgb(0, 0, 0) */
-    --color-text-inverted: 225, 225, 225; /* rgb(225, 225, 225) */
-    --color-text-muted: 141, 141, 141; /* rgb(141, 141, 141) */
-    --color-text-muted-dark: 81, 81, 84; /* rgb(81, 81, 84) */
-    /* extra backgrounds */
-    --background-extra-gray: 234, 238, 244;
-    --background-extra-dark-blue: 1, 49, 121;
-    --background-extra-blue: 17, 113, 241;
-    --background-extra-red: 254, 101, 113;
-    --background-extra-pink: 250, 239, 242;
-    --background-extra-green: 0, 174, 143;
-    /* extra-colors */
-    --color-extra-red: 254, 79, 84;
-    --color-extra-yellow: 245, 175, 34;
-    --color-extra-blue: 37, 167, 251;
-    --color-extra-green: 81, 192, 107;
-    --color-extra-violet: 111, 98, 251;
-  }
 }
 
 @layer utilities {

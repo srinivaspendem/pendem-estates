@@ -9,7 +9,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        primary: "#981f22"
+      },
       gridTemplateRows: {
         10: "repeat(10,minmax(0, 1fr))"
       }

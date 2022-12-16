@@ -5,13 +5,12 @@ import Link from "next/link";
 import { DefaultLayout } from "layouts";
 // components
 import Page from "@components/page";
-import Hero from "@components/landing/HeroComponent";
 // constants
 import { META_DESCRIPTION } from "@constants/page";
 
 const HomePage = () => {
   const meta = {
-    title: "Pendem | Home",
+    title: "Pendem | Contact",
     description: META_DESCRIPTION
   };
 
@@ -19,9 +18,7 @@ const HomePage = () => {
     <div>
       <Page meta={meta}>
         <DefaultLayout>
-          <div className="h-full overflow-auto">
-            <Hero />
-          </div>
+          <div className="h-full overflow-auto"></div>
         </DefaultLayout>
       </Page>
     </div>

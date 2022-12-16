@@ -1,4 +1,4 @@
-export const META_DESCRIPTION = "Srinivas Pendem";
-export const SITE_NAME = "Srinivas Pendem";
+export const META_DESCRIPTION = "Pendem Estates";
+export const SITE_NAME = "Pendem Estates";
 export const SITE_URL = "/";
-export const TWITTER_USER_NAME = "Srinivaspendem_";
+export const TWITTER_USER_NAME = "PendemEstates_";
