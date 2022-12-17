@@ -3,12 +3,12 @@ import Footer from "@components/Footer";
 
 const DefaultLayout = (props: any) => {
   return (
-    <div className="absolute min-h-[400px] h-screen w-full bg-primary">
-      <div className="relative ">
+    <div className="absolute min-h-[400px] h-[100vh] w-full flex flex-col">
+      <div className="relative">
         <Navbar />
       </div>
-      <main className="relative w-full overflow-hidden">{props.children}</main>
-      <div className="mt-auto">
+      <div className="relative w-full">{props.children}</div>
+      <div className="relative w-full mt-auto">
         <Footer />
       </div>
     </div>

@@ -19,7 +19,7 @@ const HomePage = () => {
     <div>
       <Page meta={meta}>
         <DefaultLayout>
-          <div className="h-full overflow-auto">
+          <div className="h-full">
             <Hero />
           </div>
         </DefaultLayout>
