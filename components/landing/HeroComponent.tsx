@@ -24,18 +24,18 @@ const HeroCarousel = () => {
       title: "Pendem Mega City",
       description:
         "Our first project with a great features like water tank, wide roads, and plantation",
-      image: "/images/hero1.jpg"
+      image: "/images/hero1.png"
     },
     {
       title: "Pendem Estates",
       description:
         "Our current project with infrastructural upcoming like BT roads, Power supply, Park and many more to come with the Engineering college opposite to the project.",
-      image: "/images/hero2.jpg"
+      image: "/images/hero2.png"
     },
     {
       title: "Upcoming Project",
       description: "Our most prestigious up coming project.",
-      image: "/images/hero3.jpg"
+      image: "/images/hero3.png"
     }
   ];
 
