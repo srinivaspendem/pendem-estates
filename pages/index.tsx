@@ -21,6 +21,7 @@ const HomePage = () => {
         <DefaultLayout>
           <div className="h-full">
             <Hero />
+            <div className="h-96"></div>
           </div>
         </DefaultLayout>
       </Page>

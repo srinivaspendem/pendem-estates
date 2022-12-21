@@ -5,8 +5,15 @@ const Footer = () => {
     <>
       <div className="w-full bg-primary relative">
         <div className="absolute w-full h-full text-white py-10">
-          <div className="container mx-auto px-5">
-            <div className="text-3xl">Your investment is always with you</div>
+          <div className="container mx-auto px-5 h-full flex  justify-between">
+            <div className="md:text-3xl">
+              Your investment is always with you
+            </div>
+            <div className="md:text-2xl mt-auto mb-40">
+              <div className="">Contact</div>
+              <div className="">9440279954</div>{" "}
+              <div className="">9440015566</div>
+            </div>
           </div>
         </div>
         <div>
